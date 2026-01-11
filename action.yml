@@ -23,7 +23,7 @@ runs:
       with:
         node-version: ${{ inputs.node-version }}
     - shell: bash
-      run: npx @evnt/dev static build
+      run: npx @evnt/dev@latest static build
     - uses: actions/upload-pages-artifact@v3
       with:
         path: ./dist
